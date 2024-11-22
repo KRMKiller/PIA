@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Celulares y Accesorios</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tienda de Celulares y Accesorios</h1>
+    <nav>
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="productos">
+      <h2>Productos</h2>
+      <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/51PPskSd9ML.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Celular">
+        <h3>SAMSUNG Galaxy S24 Ultra, Negro</h3>
+        <p>Precio: $19,678.00</p>
+        <button onclick="agregarAlCarrito('SAMSUNG Galaxy S24 Ultra, Negro')">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/81ebvO7EZxL._AC_SX425_.jpg" alt="Celular">
+        <h3>iPhone 15 Pro, Titanio Blanco</h3>
+        <p>Precio: $17,392.96</p>
+        <button onclick="agregarAlCarrito('iPhone 15 Pro, Titanio Blanco')">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/61t2h6iblzL._AC_SX569_.jpg" alt="Celular">
+        <h3>OnePlus 11, Verde</h3>
+        <p>Precio: $14,999.00</p>
+        <button onclick="agregarAlCarrito('OnePlus 11, Verde')">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/916OhFiP+tL._AC_SX425_.jpg" alt="Celular">
+        <h3>Motorola Edge 50 Ultra, Negro</h3>
+        <p>Precio: $19,999.00</p>
+        <button onclick="agregarAlCarrito('OnePlus 11, Verde')">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/51X+2NxBWxL._AC_SY550_.jpg" alt="Accesorio">
+        <h3>Estación de carga inalambrica</h3>
+        <p>Precio: $824.99</p>
+        <button onclick="agregarAlCarrito('Estación de carga inalambrica')">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-pro-2-hero-select-202409_FV1?wid=976&hei=916&fmt=jpeg&qlt=95&.v=1725492499003" alt="Accesorio">
+        <h3>AirPods Pro 2,  Blancos</h3>
+        <p>Precio: $5,799.00</p>
+        <button onclick="agregarAlCarrito('AirPods Pro 2')">Agregar al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_745801-MLM71563676594_092023-O.webp" alt="Accesorio">
+        <h3>Fundas para cualquier celular</h3>
+        <p>Precio: $100.00</p>
+        <button onclick="agregarAlCarrito('Fundas para cualquier celular')">Agregar al carrito</button>
+    </div>
+    </section>
+    <section id="promociones">
+      <h2>Promociones</h2>
+      <p>¡Compra un celular y obtén un accesorio con 50% de descuento!</p>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="formContacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Tienda de Celulares y Accesorios</p>
+  </footer>
+  <script src="Script.js"></script>
+</body>
+</html>
